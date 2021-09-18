@@ -43,7 +43,7 @@ func main() {
 
 	// Set a Go function
 	_ = vm.Set("sayHello", func(call otto.FunctionCall) otto.Value {
-		fmt.Printf("Hello, %s.\n", call.Argument(0).String()) // 获取第一个参数
+		fmt.Printf("Hello, %s.\n", call.Argument(0).String()) // get the first parameter as string
 		return otto.Value{}
 	})
 	//Set a Go function that returns something useful
